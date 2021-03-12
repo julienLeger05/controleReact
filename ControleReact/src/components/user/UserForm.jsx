@@ -5,9 +5,9 @@ const UserForm = () => {
 
     const { state, dispatch } = useContext(Context)
 
-    const [Nom, setNom] = useState('')
-    const [Prenom, setPrenom] = useState('')
-    const [Mail, setMail] = useState('')
+    const [Nom, setNom] = useState()
+    const [Prenom, setPrenom] = useState()
+    const [Mail, setMail] = useState()
 
 
     useEffect(() => {
@@ -34,8 +34,6 @@ const UserForm = () => {
         <input type="text" id="Nom" name="Nom" onChange={e => setNom(e.target.value)} />
 
         <br />
-
-      
 
         <label >Email</label>
         <input type="Mail" id="Mail" name="Mail" onChange={e => setMail(e.target.value)} />

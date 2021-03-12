@@ -2,11 +2,9 @@ import React, { useContext } from 'react'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
-
-import Context from '../../context/context'
 import CarteClick from './CarteClick'
 import Localisation from './Localisation'
-
+import Context from '../../context/context'
 
 
 L.Icon.Default.imagePath = 'img/' 
