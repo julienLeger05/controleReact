@@ -24,17 +24,20 @@ const UserForm = () => {
     }
 
     return <form onSubmit={Submit}>
-        <label htmlFor="nom">Nom</label>
+        
+        
+          <label>Prénom</label>
+        <input type="text" id="Prenom" name="Prenom" onChange={e => setPrenom(e.target.value)} />
+
+        <br />
+        <label>Nom</label>
         <input type="text" id="Nom" name="Nom" onChange={e => setNom(e.target.value)} />
 
         <br />
 
-        <label htmlFor="Prenom">Prénom</label>
-        <input type="text" id="Prenom" name="Prenom" onChange={e => setPrenom(e.target.value)} />
+      
 
-        <br />
-
-        <label htmlFor="Mail">Adresse mail</label>
+        <label >Email</label>
         <input type="Mail" id="Mail" name="Mail" onChange={e => setMail(e.target.value)} />
 
         <input type="submit" value="Save" />

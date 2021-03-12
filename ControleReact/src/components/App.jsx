@@ -4,7 +4,7 @@ import Carte from './map/Carte'
 import Context from "../context/context"
 import { useReducer } from 'react'
 import reducer from './../reducer'
-import {BrowserRouter as Router, Switch,Route, Redirect, Link} from "react-router-dom"
+import {BrowserRouter as Router, Switch,Route, Link} from "react-router-dom"
 import MarkersList from './markers/MarkersList'
 import UserForm from "./user/UserForm";
 import User from './user/User'
