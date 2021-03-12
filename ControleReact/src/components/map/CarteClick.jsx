@@ -3,15 +3,10 @@ import { useMapEvents } from "react-leaflet"
 import Context from '../../context/context'
 
 
-const MapClickHandler = () => {
+const CarteClick = () => {
 
     const { state, dispatch } = useContext(Context)
-
-    useEffect(() => {
-        console.log(state);
-    }, [state])
-
-    useMapEvents({
+   useMapEvents({
         click(e) {
             const { lat, lng } = e.latlng
             dispatch({ marker: [lat, lng], type: 'addMarker' })
@@ -20,7 +15,13 @@ const MapClickHandler = () => {
         }
     })
 
-    return <></>
+    useEffect(() => {
+        console.log(state);
+    }, [state])
+
+ 
+
+    return null
 }
 
-export default MapClickHandler
+export default CarteClick

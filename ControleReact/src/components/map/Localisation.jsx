@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useMap } from 'react-leaflet'
 
 
-const LocationHandler = () => {
+const Localisation = () => {
 
     const map = useMap()
 
@@ -19,4 +19,4 @@ const LocationHandler = () => {
     return <></>
 }
 
-export default LocationHandler
+export default Localisation
